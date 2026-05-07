@@ -1,0 +1,261 @@
+# index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foyez | Student & Programmer</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#050816;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    .bg-animation{
+      position:fixed;
+      width:100%;
+      height:100%;
+      z-index:-1;
+      overflow:hidden;
+    }
+
+    .circle{
+      position:absolute;
+      border-radius:50%;
+      background:rgba(255,255,255,0.06);
+      animation:float 12s infinite linear;
+    }
+
+    .circle:nth-child(1){
+      width:120px;
+      height:120px;
+      left:10%;
+      top:20%;
+    }
+
+    .circle:nth-child(2){
+      width:200px;
+      height:200px;
+      right:10%;
+      top:40%;
+      animation-duration:18s;
+    }
+
+    .circle:nth-child(3){
+      width:150px;
+      height:150px;
+      left:40%;
+      bottom:10%;
+      animation-duration:15s;
+    }
+
+    @keyframes float{
+      0%{
+        transform:translateY(0px) rotate(0deg);
+      }
+      50%{
+        transform:translateY(-40px) rotate(180deg);
+      }
+      100%{
+        transform:translateY(0px) rotate(360deg);
+      }
+    }
+
+    .container{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+
+    .card{
+      width:100%;
+      max-width:700px;
+      background:rgba(255,255,255,0.08);
+      border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter:blur(12px);
+      border-radius:25px;
+      padding:40px;
+      text-align:center;
+      box-shadow:0 0 30px rgba(0,0,0,0.4);
+      animation:fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    h1{
+      font-size:52px;
+      margin-bottom:10px;
+      background:linear-gradient(90deg,#00e5ff,#8a2be2);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .typing{
+      font-size:22px;
+      color:#b7c9ff;
+      border-right:3px solid white;
+      width:fit-content;
+      margin:auto;
+      white-space:nowrap;
+      overflow:hidden;
+      animation:typing 4s steps(28) infinite alternate,
+                blink 0.7s infinite;
+    }
+
+    @keyframes typing{
+      from{width:0}
+      to{width:280px}
+    }
+
+    @keyframes blink{
+      50%{
+        border-color:transparent;
+      }
+    }
+
+    .about{
+      margin-top:30px;
+      line-height:1.8;
+      color:#d6d6d6;
+      font-size:18px;
+    }
+
+    .skills{
+      margin-top:30px;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:12px;
+    }
+
+    .skill{
+      padding:12px 18px;
+      border-radius:30px;
+      background:rgba(255,255,255,0.1);
+      transition:0.3s;
+      cursor:pointer;
+    }
+
+    .skill:hover{
+      transform:scale(1.1);
+      background:#00bfff;
+    }
+
+    .footer{
+      margin-top:35px;
+      color:#999;
+      font-size:14px;
+    }
+
+    .btn{
+      margin-top:25px;
+      display:inline-block;
+      padding:14px 28px;
+      border-radius:40px;
+      background:linear-gradient(90deg,#00e5ff,#8a2be2);
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-5px);
+      box-shadow:0 0 20px rgba(0,229,255,0.5);
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="bg-animation">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+
+      <h1>ফয়েজ</h1>
+
+      <div class="typing">
+        Diploma CSE Student
+      </div>
+
+      <div class="about">
+        Hi, I'm Foyez 👋<br><br>
+
+        I'm a Diploma in CSE student from Bangladesh.
+        I love programming, technology, creative ideas,
+        websites and learning new things.
+
+        Currently exploring:
+        Web Development, Python, Cyber Security,
+        Automation and Korean language.
+      </div>
+
+      <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">HTML</div>
+        <div class="skill">C++</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Cyber Security</div>
+        <div class="skill">Korean</div>
+      </div>
+
+      <a class="btn" href="#">
+        Contact Me
+      </a>
+
+      <div class="footer">
+        Made with ❤️ by Foyez
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+```
+
+# কীভাবে Upload করবে
+
+1. GitHub repository তে যাও
+2. `creating a new file` এ click করো
+3. File name দাও:
+
+```txt
+index.html
+```
+
+4. উপরের পুরো code paste করো
+5. নিচে `Commit changes` চাপো
+6. ১-২ মিনিট wait করো
+7. তারপর open করো:
+
+```txt
+https://foyaj1234.github.io/foyez.github.io
+```
